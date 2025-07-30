@@ -17,13 +17,12 @@ a {
 p {
    font-size: 25px;
    font-family: Arial, sans-serif;
-   text-align: center; /* This was moved from a separate p selector */
+   text-align: center; 
 }
 
 img {
-  width: 100%; /* This was causing issues with specific div img rules, consider if it's needed globally */
+  width: 100%; 
 }
-
 
 div img {
     width: 150px;
@@ -39,24 +38,22 @@ div {
   padding: 2px;
 }
 
-/* Tablet View: Media Query for 772px and up */
 @media (min-width: 772px) {
     div {
-        width: 45vw; /* divs are 45% of viewport width */
-        display: inline-block; /* Ensure they appear next to each other */
+        width: 45vw;
+        display: inline-block; 
     }
 
     div img {
-        max-height: 30vh; /* images are no more 30% of viewport height */
-        width: auto; /* Allow image width to adjust proportionally */
-        height: auto; /* Allow image height to adjust proportionally */
+        max-height: 30vh;
+        width: auto; 
+        height: auto; 
     }
 }
 
-/* Large Screen View: Media Query for 998px and up */
 @media (min-width: 998px) {
     div {
-        width: 30vw; /* divs are 30% of viewport width */
+        width: 30vw; 
     }
 }
 
