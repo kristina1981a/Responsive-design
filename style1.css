@@ -87,10 +87,6 @@ header {
   color: #000;
 }
 
-.child:hover .label {
-    display: block;
-}
-
 @media (min-width: 772px) {
     div {
         width: 45vw;
