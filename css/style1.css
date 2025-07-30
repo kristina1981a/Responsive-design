@@ -1,11 +1,40 @@
+
 body {
     background-color: #dedede;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
-    text-align: center;
-    font-family: Arial, sans-serif;
     font-size: 32px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    line-height: 1.6;
+    margin: 10px auto;
+    max-width: 900px;
+}
+
+ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0 auto 20px auto;
+    max-width: 900px;
 }
 
 a {
@@ -14,44 +43,68 @@ a {
     font-family: Arial, sans-serif;
 }
 
-p {
-   font-size: 25px;
-   font-family: Arial, sans-serif;
-   text-align: center; 
-}
-
-img {
-  width: 100%; 
+div {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 2px;
+    box-sizing: border-box;
 }
 
 div img {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: auto;
 }
 
-div {
-  display: inline-block;
-  width: 24%;
-  margin: 5px;
-  padding: 2px;
+main {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+header {
+    border-radius: 5px;
+    border: 5px #000 solid;
+    margin: 10px;
+    padding: 10px 0;
+}
+
+.label {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.child:hover .label {
+    display: block;
 }
 
 @media (min-width: 772px) {
     div {
-        width: 45vw; 
+        width: 45vw;
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px;
     }
 
     div img {
-        max-height: 30vh; 
-        width: auto; 
-        height: auto; 
+        max-height: 30vh;
+        width: 100%;
+        object-fit: cover;
     }
 }
 
-@media (min-width: 998px) { 
+@media (min-width: 998px) {
     div {
-        width: 30vw; 
+        width: 30vw;
     }
 }
