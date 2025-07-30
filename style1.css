@@ -78,10 +78,11 @@ header {
 }
 
 .label {
-    display: none;
-    position: center;
-    top: 40%;
-    left: 40%;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    color: #000;
 }
 
 .child:hover .label {
